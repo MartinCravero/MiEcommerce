@@ -1,0 +1,15 @@
+.cartWidget{
+    background-color: #22c4b7;
+    border-radius: 200px;
+    padding: 15px;
+}
+
+.Cart{
+    height: 40px;
+    width: 40px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}

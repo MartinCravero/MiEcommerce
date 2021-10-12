@@ -1,0 +1,48 @@
+.NavBar{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.NavBarLogo{
+    height: 160px;
+    width: 160px;
+}
+
+.ButtonNavBar1{
+    background-color: #22c4b7;
+    color: white;
+    border-radius: 25px;
+    font-size: 15px;
+    border: unset;
+    padding: 15px 30px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Categorias{
+    background-color: #e83928;
+    border-radius: 25px;
+    margin: 0 10px 0 10px;
+    font-size: 15px;
+    height: 30px;
+    width: 140px;
+    align-self: center;
+    padding: 8px 0 0 0;
+}
+
+.ButtonNavBar2{
+    background-color: #f39801;
+    color: white;
+    border-radius: 25px;
+    font-size: 15px;
+    border: unset;
+    padding: 15px 30px;
+}
