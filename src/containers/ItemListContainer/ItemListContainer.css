@@ -1,0 +1,15 @@
+.itemListContainer{
+    background-color: #76b5c5;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.itemTitle{
+    font-size: 15px;
+
+}
+
+.item{
+    height: 160px;
+    width: 80px;
+}

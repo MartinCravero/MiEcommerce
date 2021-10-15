@@ -1,7 +1,7 @@
 import item from './Pelota.jpg';
 import './ItemListContainer.css';
 
-export const itemListContainer = () => {
+export const ItemListContainer = () => {
     return (
         <div className="itemListContainer" >
             <h1 className="itemTitle">PELOTA COMPETITION ARGENTINA 21</h1>
