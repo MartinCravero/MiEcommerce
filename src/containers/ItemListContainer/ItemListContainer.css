@@ -1,4 +1,8 @@
 .itemListContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #76b5c5;
     padding: 15px;
     margin: 50px;  
