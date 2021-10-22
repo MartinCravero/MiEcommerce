@@ -1,0 +1,29 @@
+[{
+    "name" : "Pelota Competition Argentina 21",
+    "id" : 1,
+    "price" : 17560,
+    "photo" : "https://static.dafiti.com.ar/p/adidas-0756-186958-1-product.jpg",
+    "stock" : 5
+},
+{
+    "name" : "Raqueta De Tenis Wilson Ultra Pro v3",
+    "id" : 2,
+    "price" : 36999,
+    "photo" : "https://sporting.vteximg.com.br/arquivos/ids/329741-1500-1500/WR036911U-000-1.jpg?v=637629912042130000",
+    "stock" : 12
+},
+{
+    "name" : "Botines Nike Phantom GT Academy Dynamic Fit FG/MG",
+    "id" : 3,
+    "price" : 15999,
+    "photo" : "https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dwdce88178/products/NI_CW6694-160/NI_CW6694-160-1.JPG",
+    "stock" : 18
+},
+{
+    "name" : "Palo de Hockey DF Carbon ADIDAS",
+    "id" : 4,
+    "price" : 42999,
+    "photo" : "https://www.digitalsport.com.ar/files/products/5f27ec528c946-521213-500x500.jpg",
+    "stock" : 7
+}
+]

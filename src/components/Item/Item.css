@@ -1,0 +1,25 @@
+.Item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    background-color: darkgray;
+}
+
+.Imagen{
+    height: 200px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.ImagenCont{
+    height: 210px;
+    width: 200px;
+}
+
+.Data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}

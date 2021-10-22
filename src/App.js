@@ -1,7 +1,7 @@
 
 import './App.css';
 import {NavBar} from './components/NavBar/NavBar.js'
-import {ItemListContainer} from './containers/ItemListContainer/ItemListContainer.js'
+import {ItemListContainer} from './containers/ItemListContainer/ItemListContainer'
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <NavBar/>
       </header>
       <body>
-        <ItemListContainer stock='5'/>
+        <ItemListContainer/>
       </body>
     </div>
   );
