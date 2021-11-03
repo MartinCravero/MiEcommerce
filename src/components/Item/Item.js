@@ -14,7 +14,11 @@ export const Item = ({product}) => {
             if (counter > 1) {setCounter (counter - 1)}
         }
     
-    /////////-----------------/////////
+    /////////----LÓGICA DE DETALLE PRODUCTO----/////////
+    const [flag, setFlag] = useState(true)
+    const changeFlag = () => {
+        setFlag(!flag)
+    }
 
     return (
         <div className="Item">
@@ -27,7 +31,8 @@ export const Item = ({product}) => {
                 <p>La cantidad disponible es {product.stock}</p>
                 <div className='Counter'>
                     <Counter value={counter} onAdd={add} onRemove={decreace}/>
-                </div>                
+                </div> 
+                <button onClick= {changeFlag} id={product.id}>"Ver Más"</button>               
             </div>
         </div>
     );
