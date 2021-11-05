@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Counter } from '../ItemCount/ItemCount';
 import './Item.css';
+import { Link } from 'react-router-dom';
 
 
 export const Item = ({product}) => { 
@@ -14,12 +15,6 @@ export const Item = ({product}) => {
             if (counter > 1) {setCounter (counter - 1)}
         }
     
-    /////////----LÓGICA DE DETALLE PRODUCTO----/////////
-    const [flag, setFlag] = useState(true)
-    const changeFlag = () => {
-        setFlag(!flag)
-    }
-
     return (
         <div className="Item">
             <div className="ImagenCont">
@@ -32,7 +27,7 @@ export const Item = ({product}) => {
                 <div className='Counter'>
                     <Counter value={counter} onAdd={add} onRemove={decreace}/>
                 </div> 
-                <button onClick= {changeFlag} id={product.id}>"Ver Más"</button>               
+                <Link key={product.id}  to={`/item/${product.id}`}>"Ver Más"</Link>               
             </div>
         </div>
     );

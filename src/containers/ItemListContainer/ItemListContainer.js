@@ -1,9 +1,12 @@
+
 import {ItemList} from '../../components/ItemList/ItemList'
 
 
 
 
-export const ItemListContainer = ({changeFlag , setNewId}) => {
+export const ItemListContainer = () => {
+    
+    
 
     return(
         <div className="ItemListContainer">

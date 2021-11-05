@@ -3,27 +3,35 @@
     "id" : 1,
     "price" : 17560,
     "photo" : "https://static.dafiti.com.ar/p/adidas-0756-186958-1-product.jpg",
-    "stock" : 5
+    "stock" : 5,
+    "detail" : "UNA PELOTA DE ALTA CALIDAD PARA PARTIDOS QUE CELEBRA LA NATURALEZA DE ARGENTINA. Rendí homenaje a una nación que vive y respira fútbol. Esta pelota adidas Competition Argentina fue diseñada para usarse para partidos. Su estructura sin costuras con uniones termoselladas y el sello de calidad FIFA Quality Pro garantizan un desempeño predecible en la cancha.",
+    "category" : "Futbol"
 },
 {
     "name" : "Raqueta De Tenis Wilson Ultra Pro v3",
     "id" : 2,
     "price" : 36999,
     "photo" : "https://sporting.vteximg.com.br/arquivos/ids/329741-1500-1500/WR036911U-000-1.jpg?v=637629912042130000",
-    "stock" : 12
+    "stock" : 12,
+    "detail" : "La raqueta Ultra Pro v3 presenta un perfil más delgado y un encordado más pequeño e introduce elementos como precisión y control en la línea Ultra. Esta raqueta cuenta con un ligero equilibrio de encordado para un mayor control de la cabeza y para contrarrestar la estructura sólida. El Ultra Pro es ideal para jugadores de nivel avanzado que buscan un juego más preciso y cuenta con un marco que eleva el listón para los jugadores de nivel avanzado.",
+    "category" : "Tenis"
 },
 {
     "name" : "Botines Nike Phantom GT Academy Dynamic Fit FG/MG",
     "id" : 3,
     "price" : 15999,
     "photo" : "https://www.dexter.com.ar/on/demandware.static/-/Sites-dabra-catalog/default/dwdce88178/products/NI_CW6694-160/NI_CW6694-160-1.JPG",
-    "stock" : 18
+    "stock" : 18,
+    "detail" : "Los botines Nike Phantom GT Academy FG/MG están confeccionados en cuero sintético texturizado para un mayor agarre y durabilidad. El análisis con atletas en el Nike Sport Research Lab trajo como resultado una textura de agarre más gruesa y densa en el empeine como también en la punta para brindarte un mejor toque en pases, regates y tiros. El Swoosh de Nike más grande es tu carta de presentacón para intimidad a todos tus rivales. Hechos para césped natural o artificial.",
+    "category" : "Futbol"
 },
 {
     "name" : "Palo de Hockey DF Carbon ADIDAS",
     "id" : 4,
     "price" : 42999,
     "photo" : "https://www.digitalsport.com.ar/files/products/5f27ec528c946-521213-500x500.jpg",
-    "stock" : 7
+    "stock" : 7,
+    "detail" : "El nuevo modelo Adidas DF24 Carbon aporta un diseño moderno con colores blanco/naranja. Compuesto por un 90% de fibra carbono, se ha mejorado la resistencia, durabilidad y rigidez del stick, mejorando el golpe en la pegada. Posición de curva Super Low Bow, favorece el juego si eres un jugador especialista en hacer dragflick o quieres iniciarte a ello. Tiene el Touch compound, que te ayudará a tener mejor adherencia en el derecho y revés.",
+    "category" : "Hockey"
 }
 ]
