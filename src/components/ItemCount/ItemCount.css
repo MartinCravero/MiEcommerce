@@ -15,4 +15,16 @@ button{
     background-color: #e83928;
     border-radius: 5px;
     color: white;
+    height: 30px;
+    margin: 0 20px ;
+}
+
+.countContainer{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+
+.cuantity{
+    margin-top: -0.005px;
 }
