@@ -1,8 +1,9 @@
 import './ItemList.css';
 import { useEffect, useState } from 'react';
 import { Item } from '../Item/Item';
-import Products from '../../Products.json';
 import { useParams } from 'react-router'
+import { getFirestore } from '../../firebase'
+import { collection, getDocs } from 'firebase/firestore'
 
 
 export const ItemList = () => {
@@ -21,21 +22,33 @@ export const ItemList = () => {
         }, 2000);
     });
     useEffect(() =>{
-        getProducts(Products)
-        .then((res) =>{
-            const categoryFiltrada = res.filter(x=>x.category === categoryItem)
-            console.log(categoryFiltrada)
+        const db = getFirestore();
+        getDocs(collection(db, "items")).then((snapshot) => {
+            console.log(snapshot);
+            const article = snapshot.docs.map((doc) => doc.data())
+            const categoryFiltrada = article.filter(x=>x.category === categoryItem)
             if (!categoryItem) {
-                setProductos(res)
-            } else {
-                setProductos(categoryFiltrada)
-            }
-            // setProductos(categoryItem)
-            // res.filter(x=>x.category === categoryItem)
-            // setProductos(res)
-        })
-        .catch((err) => console.log(err));
+                setProductos(article);
+                } else {
+                            setProductos(categoryFiltrada)
+                        }
+            console.log(productos)
+            
+        });
     }, [categoryItem]);
+
+        // getProducts(Products)
+    //     .then((res) =>{
+    //         const categoryFiltrada = res.filter(x=>x.category === categoryItem)
+    //         console.log(categoryFiltrada)
+    //         if (!categoryItem) {
+    //             setProductos(res)
+    //         } else {
+    //             setProductos(categoryFiltrada)
+    //         }
+    //     })
+    //     .catch((err) => console.log(err));
+    // }, [categoryItem]);
 
     return (
 

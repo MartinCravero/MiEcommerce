@@ -1,12 +1,15 @@
 import './ItemDetailContainer.css';
 import { useEffect, useState } from 'react';
 import { ItemDetail } from '../../components/ItemDetail/ItemDetail';
+// import { useCart } from '../../contexts/CartContexts';
 import Products from '../../Products.json';
 import { useParams } from 'react-router';
 
 
+
 export const ItemDetailContainer = () => {
 
+    // const {producto} = useCart ()
     const {itemId} = useParams()
     const [producto, setProducto] = useState (null);
 
