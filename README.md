@@ -1,3 +1,33 @@
+PREVIEW ECOMMERCE
+
+![Preview]()
+
+- [LINK DEL REPOSITORIO]()
+
+
+
+BASES:
+
+ - HTML
+ - CSS
+ - JAVASCRIPT
+ - REACT
+ - FIRESTORE
+
+Los botones de categorías producen el filtrado de productos, en el botón de "Ver Más" se puede ver el detalle y seleccionar cantidd a comprar con un límite dado por la cantidad disponible, una vez elegida la cantidad se da click en "Comprar" dando como resultado 2 opciones "Seguir comprando" o "Ir al carrito", la primera te devuelve al inicio y la segunda te lleva al "Carrito" donde se observan los productos seleccionados y el total de la compra. Las opciones aquí son eliminar todos los artículos con el botón "Vaciar carrito", eliminar un artículo particular con el boton en su campo y por último el botón "Comprar" el cual da display a un formulario para completar los datos personales y con el botón "Finalizar Compra" se envía la orden y vuelve al inicio.
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

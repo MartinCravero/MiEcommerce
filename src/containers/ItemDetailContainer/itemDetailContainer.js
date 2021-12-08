@@ -1,38 +1,34 @@
 import './ItemDetailContainer.css';
 import { useEffect, useState } from 'react';
 import { ItemDetail } from '../../components/ItemDetail/ItemDetail';
-// import { useCart } from '../../contexts/CartContexts';
-import Products from '../../Products.json';
 import { useParams } from 'react-router';
-
+import { doc, getDoc } from 'firebase/firestore';
+import { getFirestore } from '../../firebase';
+import { useCart } from '../../contexts/CartContexts';
 
 
 export const ItemDetailContainer = () => {
 
-    // const {producto} = useCart ()
     const {itemId} = useParams()
     const [producto, setProducto] = useState (null);
+    const { getFromCart} = useCart();
 
-    const getProducto = () => 
-        new Promise ((resolve, reject) =>{
-            setTimeout(() =>{
-                if (Products) {
-                    resolve(Products)
-                } else {
-                    reject("No existen detalles del producto.");
-                }
-            }, 3000);
-        });
 
     useEffect(() =>{
-        getProducto()
-        .then((res) =>{
-            const productoFiltrado = res.find(x => x.id === parseInt(itemId))
-                console.log(productoFiltrado)
-                setProducto(productoFiltrado)
-        } )
-        .catch((err) => console.log(err));
-    }, [itemId]);
+            const db = getFirestore();
+            const productoFiltrado = doc(db, "items", itemId);
+            getDoc(productoFiltrado).then((snapshot)=> {
+                if (snapshot){
+                    let productNewId = ({...snapshot.data(), id:itemId})
+                    if (getFromCart(productNewId)) {
+                        let productFilter = getFromCart(productNewId)
+                        setProducto(productFilter);
+                    } else {
+                        setProducto(productNewId);
+                    }
+                }
+            })
+        }, [itemId, getFromCart]);
 
     return (
 

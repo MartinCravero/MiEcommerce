@@ -4,7 +4,8 @@
     align-items: center;
     margin-top: 10px;
     background-color: darkgray;
-    height: 350px;
+    width: 100vw;
+    flex-wrap:nowrap;
 }
 
 .Imagen{

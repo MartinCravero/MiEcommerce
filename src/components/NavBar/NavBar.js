@@ -3,22 +3,23 @@ import './NavBar.css';
 import {CartWidget} from '../CartWidget/CartWidget';
 import { Link } from 'react-router-dom';
 
+
+
+
 export const NavBar = () => {
+
+    let categories = ["Futbol", "Tenis", "Hockey", "Runing", "Natación", "Otros"]
+
     return (
         <div className="NavBar" >
         <img src={logo} className="NavBarLogo" alt="logo" />
-        <button className="ButtonNavBar1"><Link to="/">Inicio</Link></button>
+        
         <ul>
-            
-            <li className="Categorias"><Link to="/category/Futbol">Fútbol</Link></li>
-            
-            <li className="Categorias"><Link to="/category/Tenis">Tenis</Link></li>
-            {/* <li className="Categorias">Runing</li> */}
-            <li className="Categorias"><Link to="/category/Hockey">Hockey</Link></li>
-            {/* <li className="Categorias">Natación</li> */}
-            <li className="Categorias">Otros</li>
+            <li><Link to="/"><button className="ButtonNavBar1">Inicio</button></Link></li>
+            {categories.map((category)=>
+                <li><Link to={`/category/${category}`}><button className="Categorias">{category}</button></Link></li>
+            )}
         </ul>
-        <button className="ButtonNavBar2">Login</button>
         <CartWidget/>
         </div>
     )

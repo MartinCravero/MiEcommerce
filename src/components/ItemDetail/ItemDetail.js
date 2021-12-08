@@ -2,8 +2,8 @@ import './ItemDetail.css';
 import { Counter } from '../ItemCount/ItemCount';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import { useCart } from '../../contexts/CartContexts';
+
 
 
 
@@ -11,12 +11,14 @@ import { useCart } from '../../contexts/CartContexts';
 export const ItemDetail = ({product}) => { 
 
 
-    const { addToCart} = useCart();
+    const { addToCart } = useCart();
         //----LÓGICA DE CONTADOR----////
     const [counter, setCounter] = useState(1)
 
-    const add = () => { 
-        if (counter < parseInt(product.stock)) {setCounter (counter + 1)}
+    const add = () => {
+        if (!product.quantity){if (counter <  parseInt(product.stock)) {setCounter (counter + 1)}}
+        if (product.quantity){if (counter <  parseInt(product.stock)-parseInt(product.quantity)) {setCounter (counter + 1)}}
+        
         }
     const decreace = () => {
         if (counter > 1) {setCounter (counter - 1)}
@@ -25,7 +27,6 @@ export const ItemDetail = ({product}) => {
     const [display, setDisplay] = useState("windows")
         
     const handleClickBuy = () =>{
-        console.log("trolo")
         setDisplay ("windowsActive")
         addToCart (product, counter);
     }
@@ -40,7 +41,8 @@ export const ItemDetail = ({product}) => {
             </div>
             <div className="Data">
                 <h1>{product.name}</h1>
-                <p>${product.price}</p>
+                <p>Aún quedan {product.remaider} unidades</p>
+                <p>Precio ${product.price}</p>
                 <p>{product.detail}</p>
             </div>
             <div className={display}>
