@@ -1,6 +1,6 @@
 PREVIEW ECOMMERCE
 
-![Preview]()
+![Preview](https://github.com/MartinCravero/MiEcommerce/blob/main/Demostraci%C3%B3n.gif)
 
 - [LINK DEL REPOSITORIO]()
 
